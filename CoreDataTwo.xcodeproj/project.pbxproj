@@ -15,6 +15,7 @@
 		5887222D1D469D6500C8B764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5887222B1D469D6500C8B764 /* LaunchScreen.storyboard */; };
 		588722381D469D6500C8B764 /* CoreDataTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588722371D469D6500C8B764 /* CoreDataTwoTests.swift */; };
 		588722431D469D6500C8B764 /* CoreDataTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588722421D469D6500C8B764 /* CoreDataTwoUITests.swift */; };
+		588722511D469DC500C8B764 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588722501D469DC500C8B764 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5887223E1D469D6500C8B764 /* CoreDataTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		588722421D469D6500C8B764 /* CoreDataTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTwoUITests.swift; sourceTree = "<group>"; };
 		588722441D469D6500C8B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588722501D469DC500C8B764 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588722511D469DC500C8B764 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		588722131D469D6500C8B764 = {
 			isa = PBXGroup;
 			children = (
+				588722501D469DC500C8B764 /* CoreData.framework */,
 				5887221E1D469D6500C8B764 /* CoreDataTwo */,
 				588722361D469D6500C8B764 /* CoreDataTwoTests */,
 				588722411D469D6500C8B764 /* CoreDataTwoUITests */,

@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var results: NSArray?
+    // properties
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var surname: UITextField!
+    @IBOutlet weak var table: UITableView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +26,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func save(sender: UIButton) {
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate  as! AppDelegate
+        
+        
     }
 
 
