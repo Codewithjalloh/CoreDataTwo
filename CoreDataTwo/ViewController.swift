@@ -19,10 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.loadTable()
-    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,8 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let appDel: AppDelegate = UIApplication.sharedApplication().delegate  as! AppDelegate
         let context: NSManagedObjectContext = appDel.managedObjectContext
         let cell = NSEntityDescription.insertNewObjectForEntityForName("Form", inManagedObjectContext: context)
-        cell.setValue(name, forKey: "name")
-        cell.setValue(surname, forKey: "surname")
+        cell.setValue(name.text, forKey: "name")
+        cell.setValue(surname.text, forKey: "surname")
         
         do {
             try context.save()
@@ -45,6 +42,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.loadTable()
         self.table.reloadData()
 
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.loadTable()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
